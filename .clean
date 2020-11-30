@@ -1,0 +1,6 @@
+# example .clean file
+dist/
+remove_me.py
+**/*.o
+**/*.bin
+*.s
