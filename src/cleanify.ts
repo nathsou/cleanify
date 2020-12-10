@@ -16,7 +16,7 @@ async function clean(globs: string[], verbose = true): Promise<void> {
                 console.log(`removing ${path}`);
             }
 
-            await Deno.remove(path);
+            await Deno.remove(path, { recursive: true });
         }
     }
 }
